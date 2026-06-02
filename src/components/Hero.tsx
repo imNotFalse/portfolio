@@ -37,7 +37,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex-shrink-0">
-          <div className="relative w-52 h-52 sm:w-64 sm:h-64">
+          <div className="relative w-44 h-44 sm:w-52 sm:h-52">
             <div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-rose-500/30">
               <Image
                 src="/headshot.jpeg"
