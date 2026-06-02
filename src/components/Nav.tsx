@@ -4,7 +4,7 @@ import { name } from "@/lib/data";
 
 export default function Nav() {
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-sm border-b border-zinc-100 dark:border-zinc-800">
+    <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-rose-950/40 via-rose-900/20 to-transparent backdrop-blur-sm border-b border-rose-900/30">
       <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
         <span className="font-semibold text-zinc-900 dark:text-zinc-100">{name}</span>
         <div className="flex gap-8 text-sm text-zinc-500 dark:text-zinc-400">
