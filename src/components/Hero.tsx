@@ -31,14 +31,21 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex-shrink-0">
-          <div className="relative w-52 h-52 sm:w-64 sm:h-64 rounded-full overflow-hidden ring-2 ring-rose-500/30">
-            <Image
-              src="/headshot.jpeg"
-              alt={`${firstName}'s headshot`}
-              fill
-              className="object-cover object-[5%_35%]"
-              priority
-            />
+          <div className="relative w-52 h-52 sm:w-64 sm:h-64">
+            <div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-rose-500/30">
+              <Image
+                src="/headshot.jpeg"
+                alt={`${firstName}'s headshot`}
+                fill
+                className="object-cover object-[5%_35%]"
+                priority
+              />
+            </div>
+            <div className="group/stevie absolute bottom-0 left-0 w-1/3 h-1/3 cursor-default">
+              <div className="absolute bottom-full left-0 mb-2 px-3 py-1.5 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 text-xs font-medium whitespace-nowrap opacity-0 group-hover/stevie:opacity-100 transition-opacity duration-200 pointer-events-none">
+                Hi Stevie ❤️
+              </div>
+            </div>
           </div>
         </div>
       </div>

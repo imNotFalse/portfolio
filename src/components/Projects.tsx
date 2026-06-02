@@ -1,8 +1,10 @@
+import FadeIn from "@/components/FadeIn";
 import { projects } from "@/lib/data";
 
 export default function Projects() {
   return (
     <section id="projects" className="py-24 border-t border-zinc-100 dark:border-zinc-800">
+      <FadeIn>
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-sm font-medium text-rose-600 dark:text-rose-400 tracking-widest uppercase mb-10">
           Projects
@@ -55,6 +57,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 }

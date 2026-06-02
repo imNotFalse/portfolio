@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Mail } from "lucide-react";
+import FadeIn from "@/components/FadeIn";
 import { links } from "@/lib/data";
 
 const contacts = [
@@ -29,6 +30,7 @@ export default function Contact() {
       id="contact"
       className="py-24 border-t border-zinc-100 dark:border-zinc-800"
     >
+      <FadeIn>
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-sm font-medium text-rose-600 dark:text-rose-400 tracking-widest uppercase mb-10">
           Contact
@@ -62,6 +64,7 @@ export default function Contact() {
           ))}
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 }
