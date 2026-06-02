@@ -35,10 +35,16 @@ export default function Contact() {
         <h2 className="text-sm font-medium text-rose-600 dark:text-rose-400 tracking-widest uppercase mb-10">
           Contact
         </h2>
-        <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-10 max-w-md">
-          I&apos;m always open to interesting conversations and opportunities.
-          Feel free to reach out.
-        </p>
+        <pre className="font-mono text-sm mb-10 max-w-md leading-relaxed">
+          <span className="text-zinc-600">{"// status:         "}</span>
+          <span className="text-rose-400">{"open"}</span>{"\n"}
+          <span className="text-zinc-600">{"// available_for:  "}</span>
+          <span className="text-zinc-400">{"new builds, collabs, hellos"}</span>{"\n"}
+          <span className="text-zinc-600">{"// response_time:  "}</span>
+          <span className="text-zinc-400">{"fast"}</span>{"\n"}
+          <span className="text-zinc-600">{"// hesitation:     "}</span>
+          <span className="text-rose-400">{"unnecessary"}</span>
+        </pre>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {contacts.map(({ label, handle, href, icon: Icon }) => (
             <a

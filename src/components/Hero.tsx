@@ -3,7 +3,13 @@ import { firstName, title } from "@/lib/data";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center pt-16">
+    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
+      <span
+        aria-hidden="true"
+        className="absolute -left-8 top-1/2 -translate-y-1/2 text-[20rem] font-bold text-white opacity-[0.015] select-none pointer-events-none leading-none"
+      >
+        !false
+      </span>
       <div className="max-w-4xl mx-auto px-6 py-24 w-full flex flex-col sm:flex-row items-center gap-12">
         <div className="flex-1">
           <p className="text-sm font-medium text-rose-600 dark:text-rose-400 mb-4 tracking-widest uppercase">
@@ -41,7 +47,7 @@ export default function Hero() {
                 priority
               />
             </div>
-            <div className="group/stevie absolute bottom-0 left-0 w-1/3 h-1/3 cursor-default">
+            <div className="group/stevie absolute bottom-0 left-0 w-1/4 h-1/2 cursor-default">
               <div className="absolute bottom-full left-0 mb-2 px-3 py-1.5 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 text-xs font-medium whitespace-nowrap opacity-0 group-hover/stevie:opacity-100 transition-opacity duration-200 pointer-events-none">
                 Hi Stevie ❤️
               </div>

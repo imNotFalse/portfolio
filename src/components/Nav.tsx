@@ -37,9 +37,11 @@ export default function Nav() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-rose-950/40 via-rose-900/20 to-transparent backdrop-blur-sm border-b border-rose-900/30">
       <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="font-semibold text-zinc-900 dark:text-zinc-100">
-          {name}
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="font-mono text-xs px-1.5 py-0.5 rounded bg-zinc-800 text-rose-400 border border-zinc-700">
+            !false
+          </span>
+        </div>
         <div className="flex gap-8 text-sm">
           {sections.map((section) => (
             <a
