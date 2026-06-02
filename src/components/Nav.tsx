@@ -9,19 +9,29 @@ export default function Nav() {
   const [active, setActive] = useState("");
 
   useEffect(() => {
-    const observers = sections.map((id) => {
-      const el = document.getElementById(id);
-      if (!el) return null;
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) setActive(id);
-        },
-        { threshold: 0.3 }
-      );
-      observer.observe(el);
-      return observer;
-    });
-    return () => observers.forEach((o) => o?.disconnect());
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const atBottom =
+        window.innerHeight + scrollY >= document.body.scrollHeight - 50;
+
+      if (atBottom) {
+        setActive(sections[sections.length - 1]);
+        return;
+      }
+
+      let current = "";
+      for (const id of sections) {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop - 120 <= scrollY) {
+          current = id;
+        }
+      }
+      setActive(current);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (

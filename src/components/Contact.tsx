@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 border-t border-zinc-100 dark:border-zinc-800"
+      className="py-24 border-t border-zinc-100 dark:border-zinc-800 scroll-mt-16"
     >
       <FadeIn>
       <div className="max-w-4xl mx-auto px-6">

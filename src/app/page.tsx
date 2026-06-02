@@ -4,11 +4,13 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import ScrollProgress from "@/components/ScrollProgress";
+import HashScroll from "@/components/HashScroll";
 
 export default function Home() {
   return (
     <>
       <ScrollProgress />
+      <HashScroll />
       <Nav />
       <main>
         <Hero />
