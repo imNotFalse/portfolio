@@ -1,0 +1,33 @@
+import { firstName, title } from "@/lib/data";
+
+export default function Hero() {
+  return (
+    <section className="min-h-screen flex items-center pt-16">
+      <div className="max-w-4xl mx-auto px-6 py-24">
+        <p className="text-sm font-medium text-rose-600 dark:text-rose-400 mb-4 tracking-widest uppercase">
+          {title}
+        </p>
+        <h1 className="text-5xl sm:text-6xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 tracking-tight">
+          Hi, I&apos;m {firstName}.
+        </h1>
+        <p className="text-xl text-zinc-500 dark:text-zinc-400 max-w-xl mb-10 leading-relaxed">
+          I build thoughtful software — clean, reliable, and built to last.
+        </p>
+        <div className="flex flex-wrap gap-4">
+          <a
+            href="#projects"
+            className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white rounded-lg font-medium transition-colors"
+          >
+            View Projects
+          </a>
+          <a
+            href="#contact"
+            className="px-6 py-3 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 rounded-lg font-medium hover:border-rose-500 dark:hover:border-rose-500 hover:text-rose-600 dark:hover:text-rose-400 transition-colors"
+          >
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
