@@ -23,7 +23,7 @@ export default function About() {
               {skills.map((skill) => (
                 <li
                   key={skill}
-                  className="text-sm text-zinc-600 dark:text-zinc-400 flex items-center gap-2"
+                  className="text-base text-zinc-600 dark:text-zinc-400 flex items-center gap-2"
                 >
                   <span className="w-1 h-1 rounded-full bg-rose-500 flex-shrink-0" />
                   {skill}

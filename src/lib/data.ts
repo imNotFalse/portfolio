@@ -14,8 +14,8 @@ export const skills = [
   "Node.js",
   "PostgreSQL",
   "Go",
+  "Claude Code",
   "HTMX",
-
 ];
 
 export type Project = {

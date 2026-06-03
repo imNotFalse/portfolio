@@ -35,7 +35,7 @@ export default function Contact() {
         <h2 className="text-sm font-medium text-rose-600 dark:text-rose-400 tracking-widest uppercase mb-10">
           Contact
         </h2>
-        <pre className="font-mono text-sm mb-10 max-w-md leading-relaxed">
+        <pre className="text-xs md:text-base font-mono md:text-sm mb-10 max-w-md leading-relaxed overflow-x-scroll">
           <span className="text-zinc-600">{"// status:         "}</span>
           <span className="text-rose-400">{"open"}</span>{"\n"}
           <span className="text-zinc-600">{"// available_for:  "}</span>

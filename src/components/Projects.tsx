@@ -16,41 +16,20 @@ export default function Projects() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {projects.map((project) => (
-              <div
+              <a
                 key={project.title}
-                className="group p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-colors"
+                href={project.repo ?? project.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-rose-500 dark:hover:border-rose-500 hover:bg-rose-950/30 transition-colors flex flex-col"
               >
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-semibold text-zinc-900 dark:text-zinc-100">
-                    {project.title}
-                  </h3>
-                  <div className="flex gap-3 ml-4">
-                    {project.repo && (
-                      <a
-                        href={project.repo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400 transition-colors"
-                      >
-                        Repo ↗
-                      </a>
-                    )}
-                    {project.href && (
-                      <a
-                        href={project.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400 transition-colors"
-                      >
-                        Live ↗
-                      </a>
-                    )}
-                  </div>
-                </div>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+                <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-3 group-hover:text-rose-500 dark:group-hover:text-rose-400 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-base text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tech.map((t) => (
                     <span
                       key={t}
@@ -60,7 +39,7 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </a>
             ))}
 
             <CurrentlyBuilding />

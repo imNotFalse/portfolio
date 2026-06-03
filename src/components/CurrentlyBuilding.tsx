@@ -46,7 +46,7 @@ export default function CurrentlyBuilding() {
         <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
         <h3 className="font-semibold text-zinc-400">Currently Building</h3>
       </div>
-      <p className="text-sm text-zinc-600 leading-relaxed min-h-[40px]">
+      <p className="text-sm text-rose-400/70 leading-relaxed min-h-10">
         {text}
         <span className="inline-block w-0.5 h-3.5 bg-zinc-500 ml-0.5 animate-pulse align-middle" />
       </p>
