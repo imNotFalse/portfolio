@@ -19,7 +19,7 @@ export default function Hero() {
             Hi, I&apos;m {firstName}.
           </h1>
           <p className="text-xl text-zinc-500 dark:text-zinc-400 max-w-xl mb-10 leading-relaxed">
-            I build thoughtful software — clean, reliable, and built to last.  
+            I build thoughtful software — clean, reliable, and built to last.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -43,7 +43,8 @@ export default function Hero() {
                 src="/headshot.jpeg"
                 alt={`${firstName}'s headshot`}
                 fill
-                className="object-cover object-[5%_35%]"
+                sizes="(max-width: 640px) 11rem, 13rem"
+                className="object-cover object-center"
                 priority
               />
             </div>
