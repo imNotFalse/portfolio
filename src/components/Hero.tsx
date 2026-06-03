@@ -6,12 +6,12 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
       <span
         aria-hidden="true"
-        className="absolute -left-8 top-1/2 -translate-y-1/2 text-[20rem] font-bold text-white opacity-[0.015] select-none pointer-events-none leading-none"
+        className="absolute -left-4 sm:-left-6 lg:-left-8 top-1/2 -translate-y-1/2 text-[6rem] sm:text-[10rem] md:text-[14rem] lg:text-[20rem] font-bold text-white opacity-[0.015] select-none pointer-events-none leading-none"
       >
         !false
       </span>
-      <div className="max-w-4xl mx-auto px-6 py-24 w-full flex flex-col sm:flex-row items-center gap-12">
-        <div className="flex-1">
+      <div className="max-w-4xl text-center md:text-left mx-auto px-6 py-24 w-full flex flex-col sm:flex-row items-center gap-12">
+        <div className="flex-1 order-2 md:order-1">
           <p className="text-sm font-medium text-rose-600 dark:text-rose-400 mb-4 tracking-widest uppercase">
             {title}
           </p>
@@ -21,7 +21,7 @@ export default function Hero() {
           <p className="text-xl text-zinc-500 dark:text-zinc-400 max-w-xl mb-10 leading-relaxed">
             I build thoughtful software — clean, reliable, and built to last.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             <a
               href="#projects"
               className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white rounded-lg font-medium transition-colors"
@@ -36,7 +36,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 order-1 md:order-2">
           <div className="relative w-44 h-44 sm:w-52 sm:h-52">
             <div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-rose-500/30">
               <Image

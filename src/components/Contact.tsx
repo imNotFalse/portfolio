@@ -41,7 +41,7 @@ export default function Contact() {
           <span className="text-zinc-600">{"// available_for:  "}</span>
           <span className="text-zinc-400">{"new builds, collabs, hellos"}</span>{"\n"}
           <span className="text-zinc-600">{"// response_time:  "}</span>
-          <span className="text-zinc-400">{"fast"}</span>{"\n"}
+          <span className="text-zinc-400">{"probably too fast"}</span>{"\n"}
           <span className="text-zinc-600">{"// hesitation:     "}</span>
           <span className="text-rose-400">{"unnecessary"}</span>
         </pre>

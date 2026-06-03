@@ -18,9 +18,9 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
-      <footer className="py-8 bg-gradient-to-l from-rose-950/40 via-rose-900/20 to-transparent border-t border-rose-900/30">
-        <div className="max-w-4xl mx-auto px-6">
-          <p className="text-sm text-zinc-300 text-center">
+      <footer className="h-16 bg-gradient-to-l from-rose-950/40 via-rose-900/20 to-transparent border-t border-rose-900/30">
+        <div className="max-w-4xl mx-auto px-6 h-full flex items-center justify-center">
+          <p className="text-sm text-zinc-300">
             © {new Date().getFullYear()} True Hall
           </p>
         </div>
