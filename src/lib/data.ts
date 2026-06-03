@@ -3,8 +3,8 @@ export const firstName = "True";
 export const title = "Full Stack Dev";
 
 export const bio = `I'm a software engineer with experience building reliable, maintainable systems.
-I care about writing clean code and shipping things that actually work.
-When I'm not at my day job, I'm working on personal projects — like this site.`;
+I care about writing clean code and shipping things that actually work and make sense.
+When I'm not at my day job, I'm either spoiling my dog, taking care of my lawn, in the gym, gaming, or working on personal projects — like this site.`;
 
 export const skills = [
   "TypeScript",
@@ -13,6 +13,9 @@ export const skills = [
   "Next.js",
   "Node.js",
   "PostgreSQL",
+  "Go",
+  "HTMX",
+
 ];
 
 export type Project = {
@@ -34,7 +37,13 @@ export const projects: Project[] = [
 ];
 
 export const links = {
-  github: "https://github.com/imNotFalse",
-  linkedin: "https://www.linkedin.com/in/true-hall-851359197/",
-  email: "truehall.dev@gmail.com",
+  email: {
+    url: "mailto:truehall.dev@gmail.com",
+    handle: "truehall.dev@gmail.com",
+  },
+  github: { url: "https://github.com/imNotFalse", handle: "imNotFalse" },
+  linkedin: {
+    url: "https://www.linkedin.com/in/true-hall-851359197/",
+    handle: "true-hall",
+  },
 };
