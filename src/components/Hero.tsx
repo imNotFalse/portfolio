@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
       <span
         aria-hidden="true"
-        className="absolute -left-4 sm:-left-6 lg:-left-8 top-1/2 -translate-y-1/2 text-[6rem] sm:text-[10rem] md:text-[14rem] lg:text-[20rem] font-bold text-white opacity-[0.015] select-none pointer-events-none leading-none"
+        className="absolute left-2 sm:left-4 lg:left-6 top-1/2 -translate-y-1/2 text-[6rem] sm:text-[10rem] md:text-[14rem] lg:text-[20rem] font-bold text-zinc-900 dark:text-white opacity-[0.025] dark:opacity-[0.015] select-none pointer-events-none leading-none"
       >
         !false
       </span>
