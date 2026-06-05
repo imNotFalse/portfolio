@@ -52,7 +52,7 @@ export default function Contact() {
               href={href}
               target={label !== "Email" ? "_blank" : undefined}
               rel={label !== "Email" ? "noopener noreferrer" : undefined}
-              className="group flex flex-col gap-4 p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-rose-500 dark:hover:border-rose-500 hover:-translate-y-1 transition-all duration-200"
+              className="group flex flex-col gap-4 p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-rose-500 dark:hover:border-rose-500 hover:bg-rose-950/30 transition-colors duration-200"
             >
               <Icon
                 size={22}

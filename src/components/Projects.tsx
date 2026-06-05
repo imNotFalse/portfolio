@@ -23,7 +23,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="group p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:border-rose-500 dark:hover:border-rose-500 hover:bg-rose-950/30 transition-colors flex flex-col"
               >
-                <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-3 group-hover:text-rose-500 dark:group-hover:text-rose-400 transition-colors">
+                <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
                   {project.title}
                 </h3>
                 <p className="text-base text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">

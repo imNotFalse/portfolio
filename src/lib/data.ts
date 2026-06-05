@@ -7,15 +7,14 @@ I care about writing clean code and shipping things that actually work and make 
 When I'm not at my day job, I'm either spoiling my dog, taking care of my lawn, in the gym, gaming, or working on personal projects — like this site.`;
 
 export const skills = [
-  "TypeScript",
-  "JavaScript",
   "React",
+  "TypeScript",
   "Next.js",
   "Node.js",
-  "PostgreSQL",
   "Go",
+  "Vite",
+  "PostgreSQL",
   "Claude Code",
-  "HTMX",
 ];
 
 export type Project = {
@@ -30,7 +29,7 @@ export const projects: Project[] = [
   {
     title: "Portfolio Site",
     description:
-      "This site. Built with Next.js, TypeScript, and Tailwind CSS. My first personal project.",
+      "This site. My first personal project. Gotta start somewhere.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     repo: "https://github.com/imNotFalse/portfolio",
   },
