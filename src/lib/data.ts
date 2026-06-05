@@ -34,6 +34,13 @@ export const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     repo: "https://github.com/imNotFalse/portfolio",
   },
+  {
+    title: "NiceLawn",
+    description:
+      "A one stop shop for DIY lawn owners. Everything you need to take care of your lawn yourself.",
+    tech: ["Bun", "Vite", "Hono", "React", "TypeScript"],
+    href: "https://nicelawn.up.railway.app",
+  },
 ];
 
 export const links = {
