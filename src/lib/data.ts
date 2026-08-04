@@ -40,6 +40,13 @@ export const projects: Project[] = [
     tech: ["Bun", "Vite", "Hono", "React", "TypeScript"],
     href: "https://nicelawn.up.railway.app",
   },
+  {
+    title: "Wardrobio",
+    description:
+      "A personal wardrobe tracker. Track items you want to buy and their cost, add your own clothes, log your fits with confidence scores.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    href: "https://wardrobio.vercel.app",
+  },
 ];
 
 export const links = {
