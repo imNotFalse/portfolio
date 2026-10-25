@@ -23,7 +23,7 @@ export default function Hero() {
             Hi, I&apos;m {firstName}.
           </h1>
           <p className="text-xl text-stone-600 dark:text-stone-400 max-w-xl mb-10 leading-relaxed">
-            I build thoughtful software — clean, reliable, and built to last.
+            I build thoughtful software. Clean, reliable, and built to last.
           </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             <a

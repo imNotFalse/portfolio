@@ -4,7 +4,7 @@ export const title = "Full Stack Dev";
 
 export const bio = `I'm a software engineer with experience building reliable, maintainable systems.
 I care about writing clean code and shipping things that actually work and make sense.
-When I'm not at my day job, I'm either spoiling my dog, taking care of my lawn, in the gym, gaming, or working on personal projects — like this site.`;
+When I'm not at my day job, I'm either spoiling my dog, taking care of my lawn, in the gym, gaming, or working on personal projects like the ones listed below.`;
 
 export const skills = [
   "React",
