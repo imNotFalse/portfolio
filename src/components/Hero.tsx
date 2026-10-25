@@ -52,11 +52,6 @@ export default function Hero() {
                 priority
               />
             </div>
-            <div className="group/stevie absolute bottom-0 left-0 w-1/4 h-1/2 cursor-default">
-              <div className="absolute bottom-full left-0 mb-2 px-3 py-1.5 rounded-lg bg-stone-900 dark:bg-stone-100 text-stone-100 dark:text-stone-900 text-xs font-medium whitespace-nowrap opacity-0 group-hover/stevie:opacity-100 transition-opacity duration-200 pointer-events-none">
-                Hi Stevie ❤️
-              </div>
-            </div>
           </div>
         </div>
       </div>
