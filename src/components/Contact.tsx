@@ -45,20 +45,21 @@ export default function Contact() {
           <span className="text-stone-400 dark:text-stone-600">{"// hesitation:     "}</span>
           <span className="text-clay-600 dark:text-clay-400">{"unnecessary"}</span>
         </pre>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="flex justify-center gap-4 sm:grid sm:grid-cols-3">
           {contacts.map(({ label, handle, href, icon: Icon }) => (
             <a
               key={label}
               href={href}
               target={label !== "Email" ? "_blank" : undefined}
               rel={label !== "Email" ? "noopener noreferrer" : undefined}
-              className="group flex flex-col gap-4 p-6 rounded-xl border border-stone-200 dark:border-stone-800 bg-white/70 dark:bg-transparent shadow-sm shadow-stone-900/5 dark:shadow-none hover:border-clay-500 dark:hover:border-clay-500 hover:bg-clay-50 dark:hover:bg-clay-950/30 transition-colors duration-200"
+              className="group flex flex-col gap-4 p-4 sm:p-6 rounded-xl border border-stone-200 dark:border-stone-800 bg-white/70 dark:bg-transparent shadow-sm shadow-stone-900/5 dark:shadow-none hover:border-clay-500 dark:hover:border-clay-500 hover:bg-clay-50 dark:hover:bg-clay-950/30 transition-colors duration-200"
             >
               <Icon
                 size={22}
                 className="text-stone-400 group-hover:text-clay-500 transition-colors duration-200"
               />
-              <div>
+              <span className="sr-only sm:hidden">{label}</span>
+              <div className="hidden sm:block">
                 <p className="font-medium text-stone-900 dark:text-stone-100 mb-1">
                   {label}
                 </p>
