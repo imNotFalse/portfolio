@@ -41,17 +41,17 @@ export default function CurrentlyBuilding() {
   const text = useTypewriter(FULL_TEXT);
 
   return (
-    <div className="p-6 rounded-xl border-2 border-dashed border-zinc-700 flex flex-col gap-3">
+    <div className="p-6 rounded-xl border-2 border-dashed border-stone-300 dark:border-stone-700 flex flex-col gap-3">
       <div className="flex items-center gap-2">
-        <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
-        <h3 className="font-semibold text-zinc-400">Currently Building</h3>
+        <span className="w-2 h-2 rounded-full bg-forest-500 animate-pulse" />
+        <h3 className="font-semibold text-stone-600 dark:text-stone-400">Currently Building</h3>
       </div>
-      <p className="text-sm text-rose-400/70 leading-relaxed min-h-10">
+      <p className="text-sm text-clay-600 dark:text-clay-400/70 leading-relaxed min-h-10">
         {text}
-        <span className="inline-block w-0.5 h-3.5 bg-zinc-500 ml-0.5 animate-pulse align-middle" />
+        <span className="inline-block w-0.5 h-3.5 bg-stone-500 ml-0.5 animate-pulse align-middle" />
       </p>
       <div className="flex flex-wrap gap-2 mt-auto pt-2">
-        <span className="text-xs px-2 py-1 rounded-md bg-zinc-800 text-zinc-600">
+        <span className="text-xs px-2 py-1 rounded-md bg-sand-200 dark:bg-stone-800 text-stone-500 dark:text-stone-600">
           ???
         </span>
       </div>

@@ -35,10 +35,10 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-rose-950/40 via-rose-900/20 to-transparent backdrop-blur-sm border-b border-rose-900/30">
+    <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-clay-100/70 via-clay-50/40 dark:from-clay-950/40 dark:via-clay-900/20 to-transparent backdrop-blur-sm border-b border-clay-200/60 dark:border-clay-900/30">
       <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="font-mono text-xs px-1.5 py-0.5 rounded bg-zinc-800 text-rose-400 border border-zinc-700">
+          <span className="font-mono text-xs px-1.5 py-0.5 rounded bg-stone-800 text-clay-400 border border-stone-700">
             !false
           </span>
         </div>
@@ -49,8 +49,8 @@ export default function Nav() {
               href={`#${section}`}
               className={`capitalize transition-colors ${
                 active === section
-                  ? "text-rose-500 dark:text-rose-400"
-                  : "text-zinc-500 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400"
+                  ? "text-clay-500 dark:text-clay-400"
+                  : "text-stone-600 dark:text-stone-400 hover:text-clay-600 dark:hover:text-clay-400"
               }`}
             >
               {section}

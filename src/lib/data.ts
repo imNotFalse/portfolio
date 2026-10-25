@@ -28,8 +28,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Portfolio Site",
-    description:
-      "This site. My first personal project. Gotta start somewhere.",
+    description: "What you're looking at right now.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     repo: "https://github.com/imNotFalse/portfolio",
   },

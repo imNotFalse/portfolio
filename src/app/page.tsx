@@ -18,9 +18,9 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
-      <footer className="h-16 bg-gradient-to-l from-rose-950/40 via-rose-900/20 to-transparent border-t border-rose-900/30">
+      <footer className="h-16 bg-gradient-to-l from-clay-100/70 via-clay-50/40 dark:from-clay-950/40 dark:via-clay-900/20 to-transparent border-t border-clay-200/60 dark:border-clay-900/30">
         <div className="max-w-4xl mx-auto px-6 h-full flex items-center justify-center">
-          <p className="text-sm text-zinc-300">
+          <p className="text-sm text-stone-500 dark:text-stone-300">
             © {new Date().getFullYear()} True Hall
           </p>
         </div>

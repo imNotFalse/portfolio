@@ -5,8 +5,8 @@ html {
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f1e7;
+  --foreground: #2a221b;
 }
 
 @theme inline {
@@ -16,10 +16,46 @@ html {
   --font-mono: var(--font-geist-mono);
 }
 
+/* Terracotta accent */
+@theme {
+  --color-clay-50: #fbf5f1;
+  --color-clay-100: #f5e6dc;
+  --color-clay-200: #ebcab6;
+  --color-clay-300: #dea688;
+  --color-clay-400: #d0805c;
+  --color-clay-500: #c2643f;
+  --color-clay-600: #a94f30;
+  --color-clay-700: #8b3f28;
+  --color-clay-800: #713424;
+  --color-clay-900: #5c2d21;
+  --color-clay-950: #321610;
+}
+
+/* Sand surface for light-mode section bands */
+@theme {
+  --color-sand-100: #f1e7d8;
+  --color-sand-200: #e7d9c4;
+}
+
+/* Forest green secondary, sampled from the headshot sweater */
+@theme {
+  --color-forest-50: #f1f6f2;
+  --color-forest-100: #dde9e0;
+  --color-forest-200: #bcd4c3;
+  --color-forest-300: #93b89e;
+  --color-forest-400: #6a9a78;
+  --color-forest-500: #4b7d5a;
+  --color-forest-600: #3a6447;
+  --color-forest-700: #2f5039;
+  --color-forest-800: #27412f;
+  --color-forest-900: #1f3427;
+  --color-forest-950: #12291e;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1a1512;
+    --foreground: #ede6dc;
   }
 }
 
